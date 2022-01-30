@@ -1,5 +1,4 @@
-require("bootstrap");
-const createEl = require("./domMethods");
+require('bootstrap');
 
 if (window.location.href.indexOf("tickets") > -1) {
 
@@ -19,7 +18,8 @@ if (window.location.href.indexOf("tickets") > -1) {
       createEl("h5", {class: "modal-title"}, 
       `Thanks for requesting a ticket purchase! We will send an email to ${purchaseEmail.value} to complete the order form!`
       ),
-    )) 
+    ))
+    
   }
   purchaseBtn.addEventListener("click", purchaseTicket);
 }
